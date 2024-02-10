@@ -15,7 +15,6 @@ body {
 
 .text-wrapper {
   height: fit-content;
-  border: 2px solid red;
   display: flex;
   justify-content: flex-start;
   background: #003049;
@@ -30,7 +29,7 @@ body {
   -webkit-text-stroke-color: #fff;
   text-stroke-color: #fff;
   white-space: nowrap;
-  padding: 0 5rem;
+  padding: 0.5rem 5rem;
   letter-spacing: 1px;
   animation: move-rtl 6000ms linear infinite;
 }
