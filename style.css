@@ -8,4 +8,39 @@
 
 .text-wrapper {
   border: 2px solid red;
+  display: flex;
+  justify-content: flex-start;
+  background: #003049;
+  overflow: hidden;
+}
+
+.text-wrapper h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 0.1px;
+  -webkit-text-stroke-color: #fff;
+  text-stroke-color: #fff;
+  white-space: nowrap;
+  padding: 0 6rem;
+  letter-spacing: 1px;
+  animation: move-rtl 6000ms linear infinite;
+}
+
+.text-wrapper h1:nth-child(1) {
+  -webkit-text-stroke-color: yellow;
+  background: black;
+}
+.text-wrapper h1:nth-child(2) {
+  -webkit-text-stroke-color: red;
+  background: white;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(-100%);
+  }
 }
