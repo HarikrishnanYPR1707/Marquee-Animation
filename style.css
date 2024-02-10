@@ -6,7 +6,15 @@
   font-family: "Protest Strike", sans-serif;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-wrapper {
+  height: fit-content;
   border: 2px solid red;
   display: flex;
   justify-content: flex-start;
@@ -22,19 +30,19 @@
   -webkit-text-stroke-color: #fff;
   text-stroke-color: #fff;
   white-space: nowrap;
-  padding: 0 6rem;
+  padding: 0 5rem;
   letter-spacing: 1px;
   animation: move-rtl 6000ms linear infinite;
 }
 
-.text-wrapper h1:nth-child(1) {
+/* .text-wrapper h1:nth-child(1) {
   -webkit-text-stroke-color: yellow;
   background: black;
 }
 .text-wrapper h1:nth-child(2) {
   -webkit-text-stroke-color: red;
   background: white;
-}
+} */
 
 @keyframes move-rtl {
   0% {
